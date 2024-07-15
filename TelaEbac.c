@@ -140,7 +140,8 @@ int main()//programa principal
 					printf("Escolha a opção desejada\n\n");
 					printf("\t1 - Registrar nomes\n");
 					printf("\t2 - Consultar nomes\n");
-					printf("\t3 - Deletar nomes\n\n");//fim menu
+					printf("\t3 - Deletar nomes\n");
+					printf("\t4 - Sair do programa\n\n");//fim menu
 					printf("Opção:");//texto
 					scanf("%d", &opcao);//seleção do menu
 					
@@ -158,6 +159,11 @@ int main()//programa principal
 							
 							case 3://deletar nome
 								dnomes();//função dnomes
+							break;
+							
+							case 4://sair do programa
+								printf("Obrigado por usar o programa!");
+								return 0;
 							break;
 							
 							default://caso o usuario insira uma opção invalida
